@@ -3,7 +3,7 @@ public class Product {
     private String name;
     private long price; // giá
     private String categories; //loại
-    private String money = "USD";
+    String money = "USD";
 
     public Product() {
     }
@@ -53,5 +53,16 @@ public class Product {
 
     public void setMoney(String money) {
         this.money = money;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", categories='" + categories + '\'' +
+                ", money='" + money + '\'' +
+                '}';
     }
 }
