@@ -17,12 +17,13 @@ public class Main {
         for (int i = 0; i < products.length; i++) {
             System.out.println("Nhập mã sản phẩm thứ "+ (i+1) +":");
             int id = scanner.nextInt();
-            System.out.println();
+            scanner.nextLine();
             System.out.println("Nhập tên sản phẩm thứ "+ (i+1) +":");
             String name = scanner.nextLine();
-            System.out.println();
+
             System.out.println("Nhập giá sản phẩm thứ "+ (i+1) +":");
             long price = scanner.nextLong();
+            scanner.nextLine();
             System.out.println("Nhập tên loại sản phẩm thứ "+ (i+1) +":");
             String categories = scanner.nextLine();
             products[i] = new Product(id,name,price,categories);
