@@ -11,19 +11,18 @@ public class Main {
         Product[] products = new Product[productNum];
         creatProduct(scanner, products);
 
-        System.out.println("Tổng giá các sản phẩm là: "+ sumPriceCalculator(products) + products[0].money);
+
         System.out.println("Nhập vào sản phẩm muốn tìm:");
         String findName = scanner.nextLine();
 
-        System.out.println(products[0].getName());
-        System.out.println(findName);
-        System.out.println(isFindProduct(products,findName));
         if(isFindProduct(products,findName)){
+            System.out.println("Đã tìm thấy sản phẩm: "+ findName);
             findProduct(products,findName);
         }else {
             System.out.println("không có sản phẩm trong danh sách!");
         }
 
+        System.out.println("Tổng giá các sản phẩm là: "+ sumPriceCalculator(products) + products[0].money);
     }
 
 
@@ -36,8 +35,8 @@ public class Main {
     }
     private static void findProduct(Product[] products, String name){
         for (int i = 0; i < products.length; i++) {
-            if(products[i].getName() == name){
-                products[i].toString();
+            if(products[i].getName().equals(name)){
+                System.out.println(products[i].toString());
             }
         }
     }
@@ -60,9 +59,11 @@ public class Main {
 
 
     public static boolean isFindProduct(Product[] products, String name) {
-
-        for (Product element:products) {
-            if(element.equals(name)){
+        for (int i = 0; i < products.length; i++) {
+            System.out.println(products[i].getName());
+        }
+        for (int i = 0; i < products.length; i++) {
+            if((products[i].getName().equals(name))){
                 return true;
             }
         }
