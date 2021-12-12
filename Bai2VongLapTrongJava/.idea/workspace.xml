@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="89e84ce1-67cb-49b4-b14e-83e36a4e3283" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Bai1IntroductionToJava/src/BMICalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai1IntroductionToJava/src/BTChangeCash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai1IntroductionToJava/src/BTHello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai1IntroductionToJava/src/DayOfMonth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai1IntroductionToJava/src/LeapYearCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai1IntroductionToJava/src/OperatorExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai1IntroductionToJava/src/THSystemTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai1IntroductionToJava/src/VariableDataType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DrawMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GreatCommonFactor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InterestCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IsPrime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrimeLessThan100.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrintShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SumCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TwentyFirstPrime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MangVaPhuongThucTrongJava/AggregateArray/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MangVaPhuongThucTrongJava/ConvertTemperature/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MangVaPhuongThucTrongJava/DeleteElementInArray/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MangVaPhuongThucTrongJava/FindMaxElement/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MangVaPhuongThucTrongJava/FindMinArray2/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MangVaPhuongThucTrongJava/FindMinInArray/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MangVaPhuongThucTrongJava/InsertElementInAray/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MangVaPhuongThucTrongJava/THFindElementIn Aray/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MangVaPhuongThucTrongJava/src/FindMaxArray2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Introduction to Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Introduction to Java/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bai6Inheritance/src/baitap/baitapvn/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bai6Inheritance/src/baitap/baitapvn/ManagerBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bai6Inheritance/src/baitap/baitapvn/Novel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bai6Inheritance/src/baitap/baitapvn/ScienceBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +39,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bai3MangVaPhuongThucTrongJava" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638888080539</updated>
       <workItem from="1638888081735" duration="617000" />
+      <workItem from="1639291689989" duration="826000" />
     </task>
     <servers />
   </component>
