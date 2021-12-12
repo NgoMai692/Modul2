@@ -47,6 +47,7 @@ public class ManagerBook {
                     System.out.println(findMinPriceBook(arrayBook));
                     break;
                 case 5:
+                    scanner.nextLine();
                     System.out.println("Nhập vào thể loại muốn tim:");
                     String findType = scanner.nextLine();
                     findBookByType(arrayBook, findType);
@@ -73,10 +74,12 @@ public class ManagerBook {
 
     private static void creatArrayBook(Scanner scanner, Book[] arrayBook) {
         for (int i = 0; i < arrayBook.length; i++) {
+
             System.out.println("Nhập thông tin sách thứ " + (i + 1));
             System.out.println("Chọn thể loại sách:");
             System.out.println("1.Sách khoa học");
             System.out.println("2.Tiểu thuyết");
+            System.out.println("3.Sách thông thường");
             System.out.println("0.Không chọn");
             System.out.println("Hãy chọn thể loại:");
             int choice = scanner.nextInt();
@@ -97,8 +100,15 @@ public class ManagerBook {
                     arrayBook[i] = new Novel(arrayBook[i].getName(), arrayBook[i].getPrice(), arrayBook[i].getAmount(), arrayBook[i].getPublishDate(), author);
                     break;
 
+                case 3:
+                    arrayBook[i] = new Book();
+                    importBook(scanner, arrayBook, i);
+                    break;
                 case 0:
                     System.exit(0);
+
+                default:
+                    System.out.println("Không có trong lựa chọn!");
             }
         }
     }
@@ -156,11 +166,11 @@ public class ManagerBook {
         return arr[minPriceIndex];
     }
 
-    private static void findBookByType(Book[] arr, String findStype) {
+    private static void findBookByType(Book[] arr, String findType) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] instanceof ScienceBook) {
-                if (((ScienceBook) arr[i]).getType().equals(findStype)) {
-                    System.out.println(arr[i]);
+                if (((ScienceBook) arr[i]).getType().equals(findType)) {
+                    System.out.println(arr[i].toString());
                 }
             }
         }
