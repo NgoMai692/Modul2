@@ -1,4 +1,4 @@
-package Geometric;
+package thuchanh.Geometric;
 
 public class RectangleTest {
     public static void main(String[] args) {

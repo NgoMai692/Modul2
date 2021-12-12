@@ -1,4 +1,4 @@
-package Geometric;
+package thuchanh.Geometric;
 
 public class CircleTest {
     public static void main(String[] args) {
