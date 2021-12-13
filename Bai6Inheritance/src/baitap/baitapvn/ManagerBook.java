@@ -25,6 +25,7 @@ public class ManagerBook {
             System.out.println("6.Tìm sách theo tác giả");
             System.out.println("7.Tính giá trung bình của sách khoa học");
             System.out.println("0.Exit");
+            System.out.println("Hãy chọn một yêu cầu!");
 
             choice = scanner.nextInt();
             switch (choice) {
@@ -167,23 +168,31 @@ public class ManagerBook {
     }
 
     private static void findBookByType(Book[] arr, String findType) {
+        boolean check = false;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] instanceof ScienceBook) {
                 if (((ScienceBook) arr[i]).getType().equals(findType)) {
                     System.out.println(arr[i].toString());
+                    check = true;
                 }
             }
         }
+        if (!check)  System.out.println("Không có thể loại này!");
+
     }
 
     private static void findBookByAuthor(Book[] arr, String findAuthor) {
+        boolean check = false;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] instanceof Novel) {
                 if (((Novel) arr[i]).getAuthor().equals(findAuthor)) {
                     System.out.println(arr[i]);
+                    check = true;
                 }
             }
         }
+        if(!check) System.out.println("Không có tác giả này!");
+
     }
 
     private static double averagePriceOfScienceBook(Book[] arr) {
