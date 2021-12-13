@@ -1,4 +1,4 @@
-package thuchanh.trienkhaiinterface;
+package thuchanh.trienkhaiinterface.compareable;
 
 import java.util.Arrays;
 

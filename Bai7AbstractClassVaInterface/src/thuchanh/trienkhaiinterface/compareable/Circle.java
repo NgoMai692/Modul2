@@ -1,4 +1,4 @@
-package thuchanh.trienkhaiinterface;
+package thuchanh.trienkhaiinterface.compareable;
 
 public class Circle {
     double radius = 1.0;

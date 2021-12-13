@@ -1,7 +1,5 @@
-package thuchanh.trienkhaiinterface;
+package thuchanh.trienkhaiinterface.compareable;
 
-
-import java.util.Comparator;
 
 public class ComparableCircle extends Circle implements Comparable<ComparableCircle> {
 
