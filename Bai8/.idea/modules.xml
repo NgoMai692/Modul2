@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Bai8.iml" filepath="$PROJECT_DIR$/.idea/Bai8.iml" />
-      <module fileurl="file://$PROJECT_DIR$/calculator/calculator.iml" filepath="$PROJECT_DIR$/calculator/calculator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fizzbuzz/fizzbuzz.iml" filepath="$PROJECT_DIR$/fizzbuzz/fizzbuzz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thuchanh/calculator/calculator.iml" filepath="$PROJECT_DIR$/thuchanh/calculator/calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap/cylinder/cylinder.iml" filepath="$PROJECT_DIR$/baitap/cylinder/cylinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thuchanh/fizzbuzz/fizzbuzz.iml" filepath="$PROJECT_DIR$/thuchanh/fizzbuzz/fizzbuzz.iml" />
     </modules>
   </component>
 </project>
