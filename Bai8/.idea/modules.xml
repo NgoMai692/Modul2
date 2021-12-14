@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Bai8.iml" filepath="$PROJECT_DIR$/Bai8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Bai8.iml" filepath="$PROJECT_DIR$/.idea/Bai8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calculator/calculator.iml" filepath="$PROJECT_DIR$/calculator/calculator.iml" />
     </modules>
   </component>
 </project>
