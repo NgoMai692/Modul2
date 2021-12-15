@@ -3,10 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Bai8.iml" filepath="$PROJECT_DIR$/.idea/Bai8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitapthem/baitapthem.iml" filepath="$PROJECT_DIR$/baitapthem/baitapthem.iml" />
       <module fileurl="file://$PROJECT_DIR$/thuchanh/calculator/calculator.iml" filepath="$PROJECT_DIR$/thuchanh/calculator/calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/thuchanh/cylinder/cylinder.iml" filepath="$PROJECT_DIR$/thuchanh/cylinder/cylinder.iml" />
       <module fileurl="file://$PROJECT_DIR$/thuchanh/fizzbuzz/fizzbuzz.iml" filepath="$PROJECT_DIR$/thuchanh/fizzbuzz/fizzbuzz.iml" />
-      <module fileurl="file://$PROJECT_DIR$/refactoring/refactoring.iml" filepath="$PROJECT_DIR$/refactoring/refactoring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap/refactoring/refactoring.iml" filepath="$PROJECT_DIR$/baitap/refactoring/refactoring.iml" />
     </modules>
   </component>
 </project>
