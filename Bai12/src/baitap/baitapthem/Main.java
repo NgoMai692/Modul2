@@ -37,27 +37,22 @@ public class Main {
                         choice1 = scanner.nextInt();
                         scanner.nextLine();
 
-
-                        if(choice1 !=0){
-
-                        }
-
                         switch (choice1){
                             case 1:
-                                Animal animal = new Dog(name,age,weight);
-                                animalManager.addAnimal(animal);
+                                Dog dog = (Dog)animalManager.creatAnimal(scanner,choice1);
+                                animalManager.addAnimal(dog);
                                 break;
                             case 2:
-                                Animal animal1 = new Cat(name,age,weight);
-                                animalManager.addAnimal(animal1);
+                                Cat cat = (Cat)animalManager.creatAnimal(scanner,choice1);
+                                animalManager.addAnimal(cat);
                                 break;
                             case 3:
-                                Animal animal2 = new Mouse(name,age,weight);
-                                animalManager.addAnimal(animal2);
+                                Mouse mouse = (Mouse) animalManager.creatAnimal(scanner,choice1);
+                                animalManager.addAnimal(mouse);
                                 break;
                             case 4:
-                                Animal animal3 = new Animal(name,age,weight);
-                                animalManager.addAnimal(animal3);
+                                Animal animal = animalManager.creatAnimal(scanner,choice1);
+                                animalManager.addAnimal(animal);
                                 break;
                         }
                     }while (choice1 !=0);
