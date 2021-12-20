@@ -54,11 +54,7 @@ public class AnimalManager {
     }
 
     public void deleteAnimal(String name) {
-        for (Animal animal : animals) {
-            if (animal.getName().equals(name)) {
-                animals.remove(animal);
-            }
-        }
+        animals.removeIf(animal -> animal.getName().equals(name));
     }
 
     public void editAnimal(String name, Scanner scanner) {
