@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        KhachHangManager khachHangManager = new KhachHangManager() ;
+        KhachSanManager khachSanManager = new KhachSanManager() ;
         int choice = -1;
 
         do{
@@ -21,23 +21,21 @@ public class Main {
 
             switch (choice){
                 case 1:
-                    khachHangManager.addGuest(khachHangManager.creatGuestInf());
+                    khachSanManager.addGuest(khachSanManager.creatGuestInf());
                     break;
                 case 2:
-                    khachHangManager.displayAllGuest();
+                    khachSanManager.displayAllGuest();
                     break;
                 case 3:
                     System.out.println("Nhập số CMT của khách hàng muốn thanh toán:");
                     long cmtId = scanner.nextLong();
-                    khachHangManager.searchGuestAndSumPriceByCmtId(cmtId);
+                    khachSanManager.searchGuestAndSumPriceByCmtId(cmtId);
                     break;
                 case 4:
                     System.out.println("Nhập tên khách hàng muốn xóa:");
                     String name = scanner.nextLine();
-                    khachHangManager.deleteGuest(name);
-
+                    khachSanManager.deleteGuest(name);
             }
-
 
         }while (choice !=0);
 

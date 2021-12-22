@@ -2,28 +2,22 @@ package bai1quanlikhachsan;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.Set;
 
-public class KhachHangManager {
-    private ArrayList<Guest> guests = new ArrayList<>();
+public class KhachSanManager {
+    private ArrayList<KhachSan> khachSans = new ArrayList<>();
 
     Scanner scanner = new Scanner(System.in);
 
-    public KhachHangManager() {
+    public KhachSanManager() {
     }
 
-    public KhachHangManager(ArrayList<Guest> guests ) {
-        this.guests = guests;
-
-    }
-
-    public void displayAllGuest(){
-        for (int i = 0; i < guests.size(); i++) {
-            System.out.println(guests.get(i));
+    public void displayAllGuest() {
+        for (KhachSan khachSan : khachSans) {
+            System.out.println(khachSan);
         }
     }
 
-    public Guest creatGuestInf() {
+    public KhachSan creatGuestInf() {
         System.out.println("Nhập tên khách hàng: ");
         String name = scanner.nextLine();
         System.out.println("Nhập ngày sinh của khách hàng: ");
@@ -42,47 +36,49 @@ public class KhachHangManager {
         double giaPhong = scanner.nextDouble();
         scanner.nextLine();
 
-        return new Guest(guest, soNgayTro, loaiPhong, giaPhong);
+        return new KhachSan(guest, soNgayTro, loaiPhong, giaPhong);
     }
 
 
-    public void addGuest(Guest guest) {
-        guests.add(guest);
+    public void addGuest(KhachSan khachSan) {
+        khachSans.add(khachSan);
     }
 
-    public Guest deleteGuest(String name){
+    public KhachSan deleteGuest(String name) {
         boolean check = false;
-        Guest deleteGuest = null;
-        for (Guest kh:guests ) {
+        KhachSan deleteKhachSan = null;
+        for (KhachSan kh : khachSans) {
             kh.getKhachhang().getName().equals(name);
             check = true;
-            deleteGuest = kh;
-            guests.remove(kh);
+            deleteKhachSan = kh;
+            khachSans.remove(kh);
         }
 
-        if (check){
+        if (check) {
             System.out.println("Đã xóa thành công khách hàng!");
-        }else {
-            System.out.println("Không có khác hàng " + name+ " trong danh sách.");
+        } else {
+            System.out.println("Không có khác hàng " + name + " trong danh sách.");
         }
-        return deleteGuest;
+        return deleteKhachSan;
     }
 
-    public Guest searchGuestAndSumPriceByCmtId(long cmtId){
+    public KhachSan searchGuestAndSumPriceByCmtId(long cmtId) {
         boolean check = false;
-        Guest searchGuest = null;
-        for (Guest kh:guests ) {
-            if(kh.getKhachhang().getCmtId() == cmtId){
+        KhachSan searchKhachSan = null;
+        for (KhachSan kh : khachSans) {
+            if (kh.getKhachhang().getCmtId() == cmtId) {
                 check = true;
-                searchGuest = kh;
+                searchKhachSan = kh;
             }
         }
 
-        if (check){
-            System.out.println("Sô tiền khách hàng có cmt "+cmtId + " là: "+ (searchGuest.getGiaPhong()*searchGuest.getSoNgayTro()));
-        }else {
+        if (check) {
+            System.out.println("Sô tiền khách hàng có cmt " + cmtId + " là: " + (searchKhachSan.getGiaPhong() * searchKhachSan.getSoNgayTro()));
+        } else {
             System.out.println("Không có khác hàng có cmt " + cmtId + " trong danh sách.");
         }
-        return searchGuest;
+        return searchKhachSan;
     }
+
+
 }

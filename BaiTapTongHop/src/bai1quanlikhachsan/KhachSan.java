@@ -1,15 +1,15 @@
 package bai1quanlikhachsan;
 
-public class Guest extends Nguoi {
+public class KhachSan extends Nguoi {
     private Nguoi khachhang;
     private int soNgayTro;
     private String loaiPhong;
     private double giaPhong;
 
-    public Guest() {
+    public KhachSan() {
     }
 
-    public Guest(Nguoi khachhang, int soNgayTro, String loaiPhong, double giaPhong) {
+    public KhachSan(Nguoi khachhang, int soNgayTro, String loaiPhong, double giaPhong) {
         this.khachhang = khachhang;
         this.soNgayTro = soNgayTro;
         this.loaiPhong = loaiPhong;
