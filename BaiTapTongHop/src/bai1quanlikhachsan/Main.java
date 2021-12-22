@@ -6,11 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhập số lượng khách hàng:");
-        int size = scanner.nextInt();
-        KhachHangManager khachHangManager = null;
-        khachHangManager.getGuests(size);
-
+        KhachHangManager khachHangManager = new KhachHangManager() ;
         int choice = -1;
 
         do{
@@ -25,8 +21,7 @@ public class Main {
 
             switch (choice){
                 case 1:
-                    Guest guest = khachHangManager.creatGuestInf();
-                    khachHangManager.addGuest(guest);
+                    khachHangManager.addGuest(khachHangManager.creatGuestInf());
                     break;
                 case 2:
                     khachHangManager.displayAllGuest();
@@ -45,12 +40,6 @@ public class Main {
 
 
         }while (choice !=0);
-
-
-
-        Guest guest = khachHangManager.creatGuestInf();
-        khachHangManager.addGuest(guest);
-
 
     }
 }

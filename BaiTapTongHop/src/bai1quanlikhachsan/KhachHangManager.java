@@ -5,11 +5,16 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class KhachHangManager {
-    private ArrayList<Guest> guests;
+    private ArrayList<Guest> guests = new ArrayList<>();
+
     Scanner scanner = new Scanner(System.in);
 
-    public ArrayList<Guest> getGuests(int size) {
-         return new ArrayList<Guest>(size);
+    public KhachHangManager() {
+    }
+
+    public KhachHangManager(ArrayList<Guest> guests ) {
+        this.guests = guests;
+
     }
 
     public void displayAllGuest(){
@@ -23,7 +28,7 @@ public class KhachHangManager {
         String name = scanner.nextLine();
         System.out.println("Nhập ngày sinh của khách hàng: ");
         String birthDay = scanner.nextLine();
-        System.out.println("Nhập ngày sinh của khách hàng: ");
+        System.out.println("Nhập số chứng minh nhân dân của khách hàng: ");
         long cmtId = scanner.nextLong();
         scanner.nextLine();
 
