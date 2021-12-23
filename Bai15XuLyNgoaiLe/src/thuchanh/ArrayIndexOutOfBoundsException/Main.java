@@ -1,4 +1,4 @@
-package ArrayIndexOutOfBoundsException;
+package thuchanh.ArrayIndexOutOfBoundsException;
 
 import java.util.Random;
 import java.util.Scanner;

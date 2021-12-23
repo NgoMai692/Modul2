@@ -1,4 +1,4 @@
-package numberformatexception;
+package thuchanh.numberformatexception;
 
 import java.util.Scanner;
 
