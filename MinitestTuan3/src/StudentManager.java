@@ -96,7 +96,7 @@ public class StudentManager {
     }
 
     public ArrayList<Student> sortStudentByAvgPoint(){
-        Collections.sort(students, new Comparator<>() {
+        students.sort(new Comparator<Student>() {
             @Override
             public int compare(Student st1, Student st2) {
                 if(st1.getAvgPoint() > st2.getAvgPoint()){
