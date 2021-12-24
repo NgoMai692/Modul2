@@ -1,4 +1,4 @@
-package baitap.timgiatrilonnhatvaghirafile;
+package thuchanh.timgiatrilonnhatinrafile;
 
 import java.io.*;
 import java.util.ArrayList;
