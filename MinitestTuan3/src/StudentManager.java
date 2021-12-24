@@ -99,7 +99,7 @@ public class StudentManager {
         students.sort(new Comparator<Student>() {
             @Override
             public int compare(Student st1, Student st2) {
-                if(st1.getAvgPoint() > st2.getAvgPoint()){
+                if(st1.getAvgPoint() < st2.getAvgPoint()){
                     return -1;
                 }else {
                     if(st1.getAvgPoint() ==st2.getAvgPoint()){
