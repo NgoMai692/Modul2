@@ -17,9 +17,6 @@ public class StudentManager implements Serializable {
         return students;
     }
 
-    public void setStudents(ArrayList<Student> students) {
-        this.students = students;
-    }
 
     public StudentManager(ArrayList<Student> students) {
         this.students = students;
@@ -101,6 +98,22 @@ public class StudentManager implements Serializable {
             }
         }
     }
+
+    public void displayWithRate() {
+        String rate ="";
+        for (Student st : students) {
+            if (st.getAvgPoint() < 4.5) {
+                rate ="Yếu";
+            }else if (st.getAvgPoint() < 6){
+                rate ="Trung Bình";
+            }else if(st.getAvgPoint() < 8){
+                rate ="Khá";
+            }else rate = "Giỏi";
+
+            System.out.println(st.getName()+"-" +st.getAvgPoint() +"-" +rate);
+        }
+    }
+
 
 
 }

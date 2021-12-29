@@ -43,7 +43,7 @@ public class Main {
                 case 3:
                     System.out.println("Nhập tên sinh viên muốn sửa:");
                     String editName = scanner.nextLine();
-                    System.out.println(studentManager.deleteStudentByName(editName));
+                    System.out.println(studentManager.editStudentByName(editName));
                     break;
                 case 4:
                     studentManager.displayAllStudent();
@@ -52,6 +52,7 @@ public class Main {
                     studentManager.displayStudentHasAvgPointMoreThan7();
                     break;
                 case 6:
+                    studentManager.displayWithRate();
                     break;
                 case 7:
                     writeToFile("student.txt",studentManager.getStudents());
