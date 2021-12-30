@@ -65,6 +65,7 @@ public class StudentManager {
         for (int i = 0; i < students.size(); i++) {
             if(students.get(i).getId() == id){
                 students.remove(i);
+                writeFile(students,PATH_NAME);
                 return true;
             }
         }
