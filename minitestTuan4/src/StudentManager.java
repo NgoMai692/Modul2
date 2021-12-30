@@ -61,7 +61,7 @@ public class StudentManager {
     }
 
     public boolean deleteStudent(int id){
-        int deleteId = -1;
+
         for (int i = 0; i < students.size(); i++) {
             if(students.get(i).getId() == id){
                 students.remove(i);
@@ -115,6 +115,7 @@ public class StudentManager {
 
     public ArrayList<Student> readFile(String path) {
         ArrayList<Student> students = new ArrayList<>();
+        ArrayList<Integer> idList= new ArrayList<>();
         File file = new File(PATH_NAME);
 
         try {
@@ -125,7 +126,8 @@ public class StudentManager {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 String[] strings = line.split(",");
-                students.add(new Student(strings[0], Integer.parseInt(strings[1]), Double.parseDouble(strings[2]), Double.parseDouble(strings[3]), Double.parseDouble(strings[4])));
+                idList.add(Integer.parseInt(strings[0]));
+                students.add(new Student(strings[1], Integer.parseInt(strings[2]), Double.parseDouble(strings[3]), Double.parseDouble(strings[4]), Double.parseDouble(strings[5])));
             }
 
         } catch (IOException e) {

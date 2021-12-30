@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -67,7 +68,8 @@ public class Main {
                     studentManager.writeFile(studentManager.getStudents(),studentManager.PATH_NAME);
                     break;
                 case 8:
-                    studentManager.readFile(studentManager.PATH_NAME);
+                    ArrayList<Student> students = studentManager.readFile(studentManager.PATH_NAME);
+                    students.forEach(System.out::println);
                     break;
 
 
