@@ -19,6 +19,7 @@ public class Main {
             System.out.println("8.Đọc file CSV");
             System.out.println("0.Exit");
             System.out.println("Nhập lựa chọn");
+            System.out.println("------------------------------------------------");
 
             choice = scanner.nextInt();
             scanner.nextLine();

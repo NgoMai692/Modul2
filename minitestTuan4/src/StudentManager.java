@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class StudentManager {
-    public static final String PATH_NAME = "minitestTuan4/src/students.csv";
+    public static final String PATH_NAME = "D:\\4. Outlook sync\\OneDrive\\Desktop\\Modul2\\minitestTuan4\\src\\students.csv";
     public ArrayList<Student> students = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
 
