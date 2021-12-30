@@ -30,7 +30,7 @@ public class StudentManager {
         double mathPoint = scanner.nextDouble();
         System.out.println("Nhập điểm môn Vật lý:");
         double physicsPoint = scanner.nextDouble();
-        System.out.println("Nhập điểm môn Toán:");
+        System.out.println("Nhập điểm môn Hóa:");
         double chemistryPoint = scanner.nextDouble();
         scanner.nextLine();
 
